@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="cn" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>消光2-AI文件 | 飞天大鹅</title><meta name="author" content="FlyingGoose"><meta name="copyright" content="FlyingGoose"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="AI遭遇战定义各地点遭遇战的生成 data\ailife\encounters\encountersettings.scr  Encounter(s) - 这是遭遇类别的声明，s是一个唯一的遭遇类别名称。  Pool(s) - 这是池的名称，通常在AIPresetPool.scr文件中定义。池用于存储可用的遭遇内容。  CooldownTime(f) - 这是遭遇之间的激活冷却时间，以秒为单位。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="消光2-AI文件">
+<meta property="og:url" content="https://flyinggoosee.github.io/2023/11/09/%E6%B6%88%E5%85%892-AI%E6%96%87%E4%BB%B6/index.html">
+<meta property="og:site_name" content="飞天大鹅">
+<meta property="og:description" content="AI遭遇战定义各地点遭遇战的生成 data\ailife\encounters\encountersettings.scr  Encounter(s) - 这是遭遇类别的声明，s是一个唯一的遭遇类别名称。  Pool(s) - 这是池的名称，通常在AIPresetPool.scr文件中定义。池用于存储可用的遭遇内容。  CooldownTime(f) - 这是遭遇之间的激活冷却时间，以秒为单位。">
+<meta property="og:locale">
+<meta property="og:image" content="https://flyinggoosee.github.io/images/touxiang.jpg">
+<meta property="article:published_time" content="2023-11-09T01:16:51.000Z">
+<meta property="article:modified_time" content="2023-11-09T10:02:35.766Z">
+<meta property="article:author" content="FlyingGoose">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://flyinggoosee.github.io/images/touxiang.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://flyinggoosee.github.io/2023/11/09/%E6%B6%88%E5%85%892-AI%E6%96%87%E4%BB%B6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '消光2-AI文件',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-09 18:02:35'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/touxiang.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tuku/"><i class="fa-fw fas fa-photo-film"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="飞天大鹅"><span class="site-name">飞天大鹅</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tuku/"><i class="fa-fw fas fa-photo-film"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">消光2-AI文件</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-11-09T01:16:51.000Z" title="Created 2023-11-09 09:16:51">2023-11-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-11-09T10:02:35.766Z" title="Updated 2023-11-09 18:02:35">2023-11-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="消光2-AI文件"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="AI遭遇战定义"><a href="#AI遭遇战定义" class="headerlink" title="AI遭遇战定义"></a>AI遭遇战定义</h3><p>各地点遭遇战的生成</p>
+<p><strong><code>data\ailife\encounters\encountersettings.scr</code></strong></p>
+<ol>
+<li><p><code>Encounter(s)</code> - 这是遭遇类别的声明，s是一个唯一的遭遇类别名称。</p>
+</li>
+<li><p><code>Pool(s)</code> - 这是池的名称，通常在AIPresetPool.scr文件中定义。池用于存储可用的遭遇内容。</p>
+</li>
+<li><p><code>CooldownTime(f)</code> - 这是遭遇之间的激活冷却时间，以秒为单位。</p>
+</li>
+<li><p><code>CooldownTimePendingActive</code> - 这是在遭遇处于待激活状态时的冷却时间，以秒为单位。</p>
+</li>
+<li><p><code>SaveCooldownTime(b)</code> - 如果设置为true，表示冷却时间应该被保存，否则设置为false。这个参数可能用于控制冷却时间的持久性。</p>
+</li>
+<li><p><code>MaxActiveInstances(i)</code> - 这是遭遇类别实例的最大数量限制。</p>
+</li>
+<li><p><code>TimeOfDay(f, f)</code> - 这是遭遇可以激活的小时范围。两个浮点数参数表示开始时间和结束时间，通常以小时为单位。</p>
+</li>
+<li><p><code>EncounterGroup(s)</code> - 这是遭遇的组别，通常是一个字符串，用于将遭遇分类到不同的组中。默认值是”Default”。</p>
+</li>
+<li><p><code>WeatherEncounterCondition(i, i)</code> - 这是可选的天气条件，用于限制在特定天气条件下激活遭遇。两个整数参数表示最小和最大的天气条件，通常以数字或特定的字符串表示不同的天气类型。</p>
+</li>
+<li><p><code>ExpRewardMultiplier(f)</code> - 这是用于遭遇经验奖励的倍数。它可以影响遭遇的难度和经验奖励的计算。</p>
+<p>Encounter(“Encounter_Template”)<br>{<br>Difficulty(“Easy”)<br>{<br>    Pool(“Encounter_Template”);  &#x2F;&#x2F; 在”Easy”难度下，使用名为”Encounter_Template”的池<br>}<br><br>Difficulty(“Medium”)<br>{<br>    Pool(“Encounter_Template”);  &#x2F;&#x2F; 在”Medium”难度下，仍然使用名为”Encounter_Template”的池<br>    ExpRewardMultiplier(2.0);    &#x2F;&#x2F; 在这个难度下，将经验奖励乘数设置为2.0<br>}<br><br>Difficulty(“Hard”)<br>{<br>    Pool(“Encounter_Template”);  &#x2F;&#x2F; 在”Hard”难度下，仍然使用名为”Encounter_Template”的池<br>    ExpRewardMultiplier(3.0);    &#x2F;&#x2F; 在这个难度下，将经验奖励乘数设置为3.0<br>}<br><br>CooldownTime(1800.0);             &#x2F;&#x2F; 设置遭遇之间的冷却时间为1800秒（30分钟）<br>TimeOfDay(-1, -1);                &#x2F;&#x2F; 遭遇可以在任何时间激活，因为开始和结束时间都为-1<br>}</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EncounterGroup(&quot;GAAS_FH&quot;); </span><br></pre></td></tr></table></figure>
+
+<p>其中<code>EncounterGroup</code>定义在 <code>data\ailife\encounters\encountermanagerconfig.scr</code>中</p>
+<h2 id="AI池定义"><a href="#AI池定义" class="headerlink" title="AI池定义"></a>AI池定义</h2><p>池中用来描述相关的ai生成，常常被遭遇战中调用</p>
+<p><strong>POOL池文件全部定义在<code>data\scripts\aipresetpool.scr</code>中</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 池的名称</span><br><span class="line">!Pool(&quot;MyPool&quot;);</span><br><span class="line">// 池的名称和与之关联的预制件的名称</span><br><span class="line">!Pool(&quot;MyPool&quot;, &quot;MyPrefab&quot;);</span><br><span class="line">// 预设的名称</span><br><span class="line">!Preset(&quot;MyPreset&quot;);</span><br><span class="line">// 预设的名称和与之关联的预制件的名称</span><br><span class="line">!Preset(&quot;MyPreset&quot;, &quot;MyPrefab&quot;);</span><br><span class="line">// 预设的名称和权重</span><br><span class="line">!PresetWeighted(&quot;MyPreset&quot;, 5);</span><br><span class="line">// 预设的名称、权重和与之关联的预制件的名称</span><br><span class="line">!PresetWeighted(&quot;MyPreset&quot;, 5, &quot;MyPrefab&quot;);</span><br><span class="line">// 标签的名称</span><br><span class="line">!Tag(&quot;MyTag&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>如Pool(“Encounter_Template”);</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Pool(&quot;Encounter_Template&quot;)</span><br><span class="line">&#123;</span><br><span class="line">    // 创建一个池，并为其命名为&quot;Encounter_Template&quot;</span><br><span class="line">    Tag(&quot;Guard&quot;) //扮演防守角色、守卫重要区域或资源的角色</span><br><span class="line">    &#123;</span><br><span class="line">        // 创建一个标签，将其命名为&quot;Guard&quot;（保卫者）</span><br><span class="line">        Preset(&quot;Character;Bandit_Bow;Scenario;General&quot;)</span><br><span class="line">        // 创建一个预设，其中包括标签&quot;Character&quot;、&quot;Bandit_Bow&quot;、&quot;Scenario&quot;和&quot;General&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    Tag(&quot;Generic&quot;)//普通角色，没有特定特征或属性</span><br><span class="line">    &#123;</span><br><span class="line">        // 创建另一个标签，将其命名为&quot;Generic&quot;（一般的）</span><br><span class="line">        Preset(&quot;Character;Bandit_Tier_2;Scenario;General&quot;)</span><br><span class="line">        // 创建一个预设，其中包括标签&quot;Character&quot;、&quot;Bandit_Tier_2&quot;、&quot;Scenario&quot;和&quot;General&quot;</span><br><span class="line">        Preset(&quot;Character;Bandit_Tier_2;Scenario;General&quot;)</span><br><span class="line">        // 创建另一个预设，与上一个相同的标签组合</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="AI生成的区域"><a href="#AI生成的区域" class="headerlink" title="AI生成的区域"></a>AI生成的区域</h3><p><strong><code>data1.13\ailife\areasettings.scr</code></strong></p>
+<p>用来设置特定区域中的ai生成，可控制生成个数，非遭遇战。</p>
+<ol>
+<li><code>AreaSettings(&quot;&lt;attribute name&gt;&quot;)</code> - 这是一个示例，用于定义特定区域的设置。区域通常与属性相关联，用于控制游戏中任务、事件或AI生成等方面的行为。</li>
+<li><code>EncounterDifficulty(&quot;Not_set&quot;)</code> - 这个参数用于设置特定区域内的遭遇难度。它可以有四个值： “Not set”、”Easy”、”Medium” 和 “Hard”，用于表示遭遇的难度级别。</li>
+<li><code>EncounterCategoryWeight(&quot;EncounterCategory,10&quot;)</code> - 这个参数用于设置特定区域中遭遇类别的权重。它允许为多个遭遇类别分配权重，以控制它们在区域内的出现频率。在示例中， “EncounterCategory” 表示遭遇类别的名称，而 “10” 表示权重。</li>
+<li><code>DynamicSpawnerDayPresetPool(&quot;Day_Exterior&quot;)</code> - 这个参数指定了在白天使用的动态生成器（Dynamic Spawner）的预设池（Preset Pool）的名称。动态生成器通常用于在游戏中生成AI或其他游戏元素。</li>
+<li><code>DynamicSpawnerNightPresetPool(&quot;Night_Exterior&quot;)</code> - 与上述相似，但是用于夜间时使用的动态生成器的预设池。</li>
+<li><code>DynamicSpawnerDayDensity(&quot;Easy&quot;)</code> - 这个参数用于设置白天时从动态生成器生成的AI的密度。它可以有五个值： “None”、”Easy”、”Medium”、”Hard” 和 “VeryHard”，表示生成的AI的数量和难度级别。</li>
+<li><code>DynamicSpawnerNightDensity(&quot;Hard&quot;)</code> - 与上述相似，但是用于夜间时从动态生成器生成的AI的密度。</li>
+<li><code>HumanReinforcementDataId(&quot;PK_Area_01&quot;)</code> - 这个参数用于指定由人类召唤者在街道上生成的AI组的组成数据。它通常用于描述召唤者生成的敌人或帮手。</li>
+<li><code>InfectedReinforcementDataId(&quot;DZ_01&quot;)</code> - 这个参数用于指定由大声噪音或尖叫声在黑暗区域（dark zones）生成的感染者组的组成数据。通常用于描述由噪音或事件引起的感染者生成。</li>
+</ol>
+<h3 id="人类AI生成定义"><a href="#人类AI生成定义" class="headerlink" title="人类AI生成定义"></a>人类AI生成定义</h3><p><strong><code>data1.13\ailife\ailifepopulationdefs.scr</code></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// (SCAV/SCV) Scavengers Presets - HUB</span><br><span class="line">export string HUB_SCAV_BASE_AGENDA_MAN       		= &quot;Spawn;Scav_man_Hub_base;&quot;; </span><br><span class="line">//定义外部调用变量为生成Scav_man_Hub_base</span><br></pre></td></tr></table></figure>
+
+<p>其中<strong>Scav_man_Hub_base</strong> 人物预设在 <strong>data1.13\presets\logic\humanai\humanai_hub.def</strong>中</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/images/touxiang.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/weixin_pay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/weixin_pay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/images/bzhan_pay.jpg" target="_blank"><img class="post-qr-code-img" src="/images/bzhan_pay.jpg" alt="B站"/></a><div class="post-qr-code-desc">B站</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/10/26/Butterfly%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87/" title="Butterfly访问速度提升"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">Butterfly访问速度提升</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">FlyingGoose</div><div class="author-info__description">Modder For DyingLight</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/475665038"><i class="fab fa-bilibili"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://space.bilibili.com/475665038" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #FF82AB;"></i></a><a class="social-icon" href="https://github.com/FlyingGooseE" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">这是我的个人博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#AI%E9%81%AD%E9%81%87%E6%88%98%E5%AE%9A%E4%B9%89"><span class="toc-number">1.</span> <span class="toc-text">AI遭遇战定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AI%E6%B1%A0%E5%AE%9A%E4%B9%89"><span class="toc-number"></span> <span class="toc-text">AI池定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AI%E7%94%9F%E6%88%90%E7%9A%84%E5%8C%BA%E5%9F%9F"><span class="toc-number">1.</span> <span class="toc-text">AI生成的区域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E7%B1%BBAI%E7%94%9F%E6%88%90%E5%AE%9A%E4%B9%89"><span class="toc-number">2.</span> <span class="toc-text">人类AI生成定义</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/09/%E6%B6%88%E5%85%892-AI%E6%96%87%E4%BB%B6/" title="消光2-AI文件">消光2-AI文件</a><time datetime="2023-11-09T01:16:51.000Z" title="Created 2023-11-09 09:16:51">2023-11-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/26/Butterfly%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87/" title="Butterfly访问速度提升">Butterfly访问速度提升</a><time datetime="2023-10-26T01:54:21.000Z" title="Created 2023-10-26 09:54:21">2023-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/16/%E5%86%85%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E7%89%87/" title="“如何自定义内置的图片？”"><img src="/./images/menu_frontend_background_black.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="“如何自定义内置的图片？”"/></a><div class="content"><a class="title" href="/2023/10/16/%E5%86%85%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E7%89%87/" title="“如何自定义内置的图片？”">“如何自定义内置的图片？”</a><time datetime="2023-10-16T07:15:59.000Z" title="Created 2023-10-16 15:15:59">2023-10-16</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By FlyingGoose</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
